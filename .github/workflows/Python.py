@@ -65,8 +65,8 @@ if __name__ == "__main__":
 
     conn = get_connection()
 
-    source_table = "SOURCE_TABLE"
-    target_table = "TARGET_TABLE"
+    source_table = "users"
+    target_table = "USER_COPY"
 
     src_df = read_table(conn, source_table)
     tgt_df = read_table(conn, target_table)
@@ -74,3 +74,4 @@ if __name__ == "__main__":
     result = validate(src_df, tgt_df)
 
     exit(result)
+
