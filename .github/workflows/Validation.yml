@@ -24,7 +24,7 @@ jobs:
         
 
         run: |
-          python snowflake_validate.py
+          python python.py
 
       - name: Upload Report
         if: failure()
